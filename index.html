@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="all">
+        <div class="first">
+            <div id="demo"></div>
+        </div>
+        <div class="second">
+            
+
+            <div class=".col-sm-12 .col-md-12 .col-lg-12"><input type="text" placeholder="width" id="w" class="cc"></div>
+            <div class=".col-sm-12 .col-md-12 .col-lg-12"><input type="text" placeholder="height" id="h" class="cc2"></div>
+            <div class=".col-sm-12 .col-md-12 .col-lg-12"><input type="text" placeholder="background" id="bg" class="cc3"></div>
+            <div class=".col-sm-12 .col-md-12 .col-lg-12"><input type="text" placeholder="float" id="float" class="cc4"></div>
+            <div class=".col-sm-12 .col-md-12 .col-lg-12"><input type="text" placeholder="backgroundImage" id="bgi" class="cc5"></div>
+            <div class=".col-sm-12 .col-md-12 .col-lg-12"><input type="text" placeholder="backgroundPosition" id="bgp" class="cc6"></div>
+            <div class=".col-sm-12 .col-md-12 .col-lg-12"><input type="text" placeholder="backgroundRepeat" id="bgr" class="cc7"></div>
+            <div class=".col-sm-12 .col-md-12 .col-lg-12"><input type="text" placeholder="backgroundSize" id="bgs" class="cc8"></div>
+            <!-- <div class=".col-sm-12 .col-md-12 .col-lg-12"><input type="text" placeholder="backgroundAttachment" id="bga" class="cc9"></div> -->
+            <button onclick="demo()">Generate</button>
+            <br><br><br>
+
+            <!-- <div id="demo"></div> -->
+        </div>
+    </div>
+</body>
+</html>
+<script>
+
+    function demo(){ 
+        let w = document.getElementById('w').value   
+        let h = document.getElementById('h').value   
+        let bg = document.getElementById('bg').value   
+        let float = document.getElementById('float').value     
+        let bgi = document.getElementById('bgi').value
+        let bgp = document.getElementById('bgp').value  
+        let bgr = document.getElementById('bgr').value 
+        let bgs = document.getElementById('bgs').value
+        
+        // let bga = document.getElementById('bga').value
+
+
+        let div = document.getElementById('demo')
+        div.style.width = w
+        div.style.height = h
+        div.style.background = bg
+        div.style.float = float
+        div.style.backgroundImage = bgi
+        div.style.backgroundPosition = bgp
+        div.style.backgroundRepeat = bgr
+        div.style.backgroundSize = bgs
+        // div.style.backgroundAttachment = bga     
+    }
+
+</script>
